@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_browser_screen">
+    <sys_sg_browser_screen action="INSERT_OR_UPDATE">
+        <available_offline>false</available_offline>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <external_browser>false</external_browser>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>true</hide_screen_name>
+        <icon display_value="icon-Bookmark">050b7d40c7231010fc3a2aa9b8c260ff</icon>
+        <name>Rapport</name>
+        <relative_url>false</relative_url>
+        <roles_override/>
+        <sys_class_name>sys_sg_browser_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 13:20:43</sys_created_on>
+        <sys_id>426f775387763c10040dcbb5cebb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rapport</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_sg_browser_screen_426f775387763c10040dcbb5cebb35af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 13:20:43</sys_updated_on>
+        <url>https://tdefscesm1demo.service-now.com/op?id=investment_committee_dashboard</url>
+    </sys_sg_browser_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=426f775387763c10040dcbb5cebb35af"/>
+</record_update>

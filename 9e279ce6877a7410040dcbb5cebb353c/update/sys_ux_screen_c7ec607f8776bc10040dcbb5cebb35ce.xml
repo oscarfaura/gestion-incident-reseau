@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Gestion Incident Reseau Config">a84fa8a2353e7410306b6ccacc4cdf0b</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckuiiccuhhjaaaaacddeiieevbbgwswan",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "x_snc_gestion_in_0.SCREEN_STATUS_CHANGED_RELAY_baecec3f8776bc10040dcbb5cebb359b",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "x_snc_gestion_in_0.SCREEN_STATUS_CHANGED_RELAY_baecec3f8776bc10040dcbb5cebb359b",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.SCREEN_STATUS_CHANGED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "screenKey" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "screenKey" ]
+            }
+          },
+          "status" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "status" ]
+            }
+          },
+          "title" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "title" ]
+            }
+          },
+          "icon" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "icon" ]
+            }
+          },
+          "message" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "message" ]
+            }
+          },
+          "isDirty" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "isDirty" ]
+            }
+          },
+          "hasError" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "hasError" ]
+            }
+          },
+          "hasUpdate" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "hasUpdate" ]
+            }
+          },
+          "dirtyModalId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "dirtyModalId" ]
+            }
+          },
+          "tooltipPreview" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "tooltipPreview" ]
+            }
+          },
+          "screenParams" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "screenParams" ]
+            }
+          }
+        }
+      },
+      "sysId" : "f71f58643791ec0183da148626eb757d"
+    },
+    "operation" : null,
+    "targetId" : "ckuiiccuhhjaaaaabddeiieenvhjjaomf",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Record">baecec3f8776bc10040dcbb5cebb359b</macroponent>
+        <macroponent_config>{
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>Record default instructions</name>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Record">a04fa8a2c53e74107ade460668dbdf0c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 11:18:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c7ec607f8776bc10040dcbb5cebb35ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Record default instructions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_screen_c7ec607f8776bc10040dcbb5cebb35ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:27:17</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=c7ec607f8776bc10040dcbb5cebb35ce"/>
+</record_update>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Astreinte" max_length="40" name="x_snc_gestion_in_0_astreinte" sizeclass="2" type="collection">
+        <element display="true" label="Niveau Support" max_length="32" name="niveau_support" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element display="true" label="Opérateur" max_length="32" name="operateur" reference="sys_user" type="reference"/>
+        <element display="true" label="Déclenchement" max_length="32" name="u_declenchement" reference="x_snc_gestion_in_0_d_clenchement" type="reference"/>
+        <index name="index">
+            <element name="u_declenchement"/>
+        </index>
+        <index name="index2">
+            <element name="operateur"/>
+        </index>
+        <index name="index3">
+            <element name="niveau_support"/>
+        </index>
+    </element>
+</database>

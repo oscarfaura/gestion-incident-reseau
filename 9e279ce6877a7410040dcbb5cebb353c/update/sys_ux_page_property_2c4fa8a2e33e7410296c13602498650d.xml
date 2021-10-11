@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>routeConfigId</name>
+        <page display_value="Gestion Incident Reseau">684fa8a2cd3e7410ca2c0489972ca00d</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 14:15:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>2c4fa8a2e33e7410296c13602498650d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>routeConfigId</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_page_property_2c4fa8a2e33e7410296c13602498650d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 14:15:52</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_snc_gestion_in_0.684fa8a2cd3e7410ca2c0489972ca00d.root.routeConfigId</unique_name>
+        <value>76a302f10b131010a8b1c96237673a61</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=2c4fa8a2e33e7410296c13602498650d"/>
+</record_update>

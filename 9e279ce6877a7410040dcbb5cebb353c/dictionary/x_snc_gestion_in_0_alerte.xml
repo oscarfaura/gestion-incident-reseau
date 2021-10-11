@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Alerte" max_length="40" name="x_snc_gestion_in_0_alerte" sizeclass="267" type="collection">
+        <element label="Date de détection" max_length="40" name="date_de_d_tection" type="glide_date_time"/>
+        <element label="Début du dysfonctionnement" max_length="40" name="d_but_du_dysfonctionnement" type="glide_date_time"/>
+        <element choice="1" label="Mode de détection" max_length="40" name="mode_de_d_tection" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Email" sequence="0" value="email"/>
+                <element inactive_on_update="false" label="Portail" sequence="0" value="portail"/>
+                <element inactive_on_update="false" label="Alarme" sequence="1" value="alarme"/>
+                <element inactive="true" inactive_on_update="true" label="API" sequence="1" value="api"/>
+                <element inactive_on_update="false" label="Evenement" sequence="2" value="evenement"/>
+                <element inactive_on_update="false" label="Appel" sequence="3" value="appel"/>
+            </choice>
+        </element>
+        <element label="Outil de détection" max_length="60" name="outil_de_d_tection" read_only="true" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "request_translation_content",
+  "elementLabel" : "Request Translation Content",
+  "propertyValues" : {
+    "label" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "bare" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Page Content",
+  "definition" : {
+    "id" : "4b8588d1ef6ef74fbf981f602d6ae48f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "content_info",
+      "elementLabel" : "Content Info",
+      "propertyValues" : {
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "p"
+        },
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "A language appears grayed out if the associated translation task is in progress.",
+            "comment" : ""
+          }
+        },
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { font-family: \"Source Sans Pro\", \"Helvetica Neue\", helvetica, arial, sans-serif; font-size:15px;}"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Content 1",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "select_languages_label",
+      "elementLabel" : "Select Langauges Label",
+      "propertyValues" : {
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "p"
+        },
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Select languages",
+            "comment" : ""
+          }
+        },
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { font-family: \"Source Sans Pro\", \"Helvetica Neue\", helvetica, arial, sans-serif; font-size:15px;}"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Content 2",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "translation_languages",
+      "elementLabel" : "Translation Languages",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "secondary"
+        },
+        "select" : {
+          "type" : "JSON_LITERAL",
+          "value" : "multi"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "placeholder" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Languages",
+            "comment" : ""
+          }
+        },
+        "hideLabel" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "bare" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "showPadding" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideCaret" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "items" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "available_languages", "availableLanguages" ]
+          }
+        },
+        "opened" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "panelFitProps" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "selectedItems" : {
+          "type" : "JSON_LITERAL",
+          "value" : [ ]
+        },
+        "configAria" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "tooltipContent" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "showPresencePattern" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckewpeezibaaaabbjjddhhhdggfiiehhkx",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_dropdown.NOW_DROPDOWN#SELECTED_ITEMS_SET",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "b70d287f8776bc10040dcbb5cebb35ba"
+          },
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "ckewpffbauaaaabbaddhhhdhgddfeeghjj",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
+      "slot" : "content 3",
+      "definition" : {
+        "id" : "22c67d9a1e515fef66442e1469bed3a2",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Content 1","rules":{"grid-area":"greeting"},"styles":{"display":"flex","height":"20px","margin":"0px"}},{"slotName":"Content 2","rules":{"grid-area":"callout"},"styles":{"height":"20px","margin-top":"18px","display":"flex","margin-bottom":"6px"}},{"slotName":"content 3","rules":{"grid-area":"search"},"styles":{"display":"flex","padding-top":"4px","height":"32px"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"1fr auto auto auto 1fr","grid-template-columns":"100%","grid-template-areas":"\". .\" \"greeting .\" \"callout .\" \"search .\" \". .\"","grid-gap":"1px","align-content":"center","place-content":"stretch","place-items":"stretch"},
+        "styles" : null,
+        "templateId" : null,
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "margin-left" : "24px",
+    "height" : "100px",
+    "margin-top" : "4px"
+  }
+}, {
+  "elementId" : "action_container",
+  "elementLabel" : "Action Container",
+  "propertyValues" : {
+    "label" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "bare" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Page Footer",
+  "definition" : {
+    "id" : "4b8588d1ef6ef74fbf981f602d6ae48f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "submit",
+      "elementLabel" : "Submit",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "primary"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Submit",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Enter a label",
+            "comment" : ""
+          }
+        },
+        "configAria" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckewvuowggaaaaaajddhhhdggccepddqiij",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventCorrelationId" : null,
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : {
+            "dataBrokerId" : "ff1d48f31df69410f877978b7d79b5a0",
+            "operationName" : "EXECUTE",
+            "parentResourceId" : "create_translation_task",
+            "payload" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "article" : {
+                  "type" : "CONTEXT_BINDING",
+                  "binding" : {
+                    "address" : [ "sysId" ],
+                    "category" : "props"
+                  }
+                },
+                "translationLanguages" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "selectedLanguages" ]
+                  }
+                }
+              }
+            }
+          },
+          "targetId" : "ckewvurbvaaaaaakddhhhdfcctddffxeh",
+          "type" : "DATABROKER_OP"
+        } ]
+      } ],
+      "slot" : "actions",
+      "definition" : {
+        "id" : "d37ce8abca89d02905fed903c8e34d8e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"actions","rules":{"grid-area":"1 / 1 / 2 / 2","min-height":"20px"},"styles":{"display":"flex","float":"right"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"repeat(1, auto)","grid-column-gap":"10px","grid-row-gap":"5px"},
+        "styles" : {},
+        "templateId" : null,
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "stylized_text_1",
+  "elementLabel" : "Stylized Text 1",
+  "propertyValues" : {
+    "tag" : {
+      "type" : "JSON_LITERAL",
+      "value" : "p"
+    },
+    "text" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "message" : "Request translation",
+        "comment" : ""
+      }
+    },
+    "css" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Page Header",
+  "definition" : {
+    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "margin-left" : "24px",
+    "font-weight" : "bold",
+    "font-size" : "20px"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "ff1d48f31df69410f877978b7d79b5a0",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "create_translation_task",
+  "elementLabel" : "Create translation Task",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckgaapmgfftaaaaaamddhhhfijtnutggg",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "7f0d287f8776bc10040dcbb5cebb35be"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckgaapmgffuaaaaaanddhhhflmeeccvlaaaa",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "54012d271d729410f877978b7d79b5a4",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "available_languages",
+  "elementLabel" : "Available Languages",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "article" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <dispatched_events>aeda532f9513d010f877fe59bd3fecc3,f3ed75ad71746c10f87741c18dbe2836</dispatched_events>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Page Header","rules":{"grid-area":"row-one","min-height":"56px"},"styles":{"display":"flex","padding-bottom":"24px","max-height":"32px","padding-top":"10px"}},{"slotName":"Page Content","rules":{"grid-area":"row-two","min-height":"104px"},"styles":{"display":"flex","max-height":"100px","margin-top":"4px"}},{"slotName":"Page Footer","rules":{"grid-area":"row-three","min-height":"32px"},"styles":{"display":"flex","flex-direction":"row-reverse","max-height":"32px","padding-top":"40px","padding-bottom":"38px","padding-right":"4px"}}],
+    "root" : null,
+    "rules" : {"height":"100%","overflow":"hidden","grid-template-columns":"1fr","grid-template-areas":"\"row-one\" \"row-two\" \"row-three\"","grid-gap":"1px"},
+    "styles" : null,
+    "templateId" : null,
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Request Translation</name>
+        <props>[ {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : null,
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : null,
+  "readOnly" : false,
+  "selectable" : false
+} ]</props>
+        <required_translations>[ {
+  "message" : "A language appears grayed out if the associated translation task is in progress.",
+  "comment" : ""
+}, {
+  "message" : "Enter a label",
+  "comment" : ""
+}, {
+  "message" : "Languages",
+  "comment" : ""
+}, {
+  "message" : "Request translation",
+  "comment" : ""
+}, {
+  "message" : "Select languages",
+  "comment" : ""
+}, {
+  "message" : "Submit",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "selectedLanguages",
+  "label" : "selectedLanguages",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ ]
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 11:18:38</sys_created_on>
+        <sys_id>230d287f8776bc10040dcbb5cebb3599</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Request Translation</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_macroponent_230d287f8776bc10040dcbb5cebb3599</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 11:18:39</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_ouvert_par" label="Ouvert par" language="en" table="x_snc_gestion_in_0_incident_data">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_ouvert_par</element>
+            <help/>
+            <hint/>
+            <label>Ouvert par</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <plural>Ouvert pars</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-27 12:47:03</sys_created_on>
+            <sys_id>a3ea18ae877a7410040dcbb5cebb35e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Ouvert par</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_gestion_in_0_incident_data_u_ouvert_par_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-27 12:47:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

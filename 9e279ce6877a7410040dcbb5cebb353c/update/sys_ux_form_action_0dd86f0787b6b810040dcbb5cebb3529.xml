@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Passage en investigation</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 17:04:31</sys_created_on>
+        <sys_id>0dd86f0787b6b810040dcbb5cebb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Passage en investigation</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_form_action_0dd86f0787b6b810040dcbb5cebb3529</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 17:04:31</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+        <ui_action display_value="Passage en investigation">f2f7ebc387b6b810040dcbb5cebb358c</ui_action>
+    </sys_ux_form_action>
+</record_update>

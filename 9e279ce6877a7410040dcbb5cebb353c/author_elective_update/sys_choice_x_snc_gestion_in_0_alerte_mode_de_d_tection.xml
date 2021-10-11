@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="mode_de_d_tection" table="x_snc_gestion_in_0_alerte" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>mode_de_d_tection</element>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-27 13:23:22</sys_created_on>
+            <sys_id>2333a82e87ba7410040dcbb5cebb3574</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>mode_de_d_tection</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_choice_x_snc_gestion_in_0_alerte_mode_de_d_tection</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-27 13:23:22</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Email</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-27 13:23:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f33a82e87ba7410040dcbb5cebb3555</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:44</sys_updated_on>
+            <value>email</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Portail</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-27 13:23:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6333a82e87ba7410040dcbb5cebb3573</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:43</sys_updated_on>
+            <value>portail</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Alarme</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 07:43:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>061f14368776f410040dcbb5cebb35e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:43</sys_updated_on>
+            <value>alarme</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>API</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-27 13:23:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af33a82e87ba7410040dcbb5cebb35a3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:44</sys_updated_on>
+            <value>api</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Evenement</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 07:43:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>861f14368776f410040dcbb5cebb35ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:43</sys_updated_on>
+            <value>evenement</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mode_de_d_tection</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Appel</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_alerte</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 07:43:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>021f14368776f410040dcbb5cebb35f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 07:43:44</sys_updated_on>
+            <value>appel</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

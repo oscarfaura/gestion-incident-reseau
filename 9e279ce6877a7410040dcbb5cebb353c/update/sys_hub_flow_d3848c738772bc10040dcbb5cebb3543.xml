@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch1-hotfix1-09-15-2021_09-16-2021_1434.zip</compiler_build>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>incident_notification__assignment</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger➛Incident Data Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"sys_id"},{"name":"Created_1.current.short_description","label":"Trigger➛Incident Data Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"short_description"},{"name":"Created_1.current.number","label":"Trigger➛Incident Data Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"number"},{"name":"aa990ec4-910e-46ca-9f4b-fe347a5f0600.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa990ec4-910e-46ca-9f4b-fe347a5f0600.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.__dont_treat_as_error__","label":"4➛5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.__action_status__","label":"4➛5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.name","label":"4➛5➛Name","reference_display":"Name","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fb24efcd-5cb6-474a-9211-e9c8690c7637"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.value","label":"4➛5➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"30b337c1-2c64-441a-a3e3-d7d5812fff9b"}},{"name":"274bc397-c93e-4879-9cd6-7ed5ef564f43.__dont_treat_as_error__","label":"4➛5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"274bc397-c93e-4879-9cd6-7ed5ef564f43.__action_status__","label":"4➛5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"Created_1.current","label":"Trigger➛Incident Data Record","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"reference","base_type":"reference","attributes":{}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.__dont_treat_as_error__","label":"2➛3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.__action_status__","label":"2➛3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.table_name","label":"2➛3➛Incident Data Table","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.record","label":"2➛3➛Incident Data Record","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>f59e7873873abc10040dcbb5cebb3514</master_snapshot>
+        <name>Incident Notification &amp; assignment</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>058024af873a3c10040dcbb5cebb3585</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:21:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3848c738772bc10040dcbb5cebb3543</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Incident Notification &amp; assignment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_hub_flow_d3848c738772bc10040dcbb5cebb3543</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3848c738772bc10040dcbb5cebb3543"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d3848c738772bc10040dcbb5cebb3543"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_gestion_in_0_incident_data">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 15:45:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>058024af873a3c10040dcbb5cebb3585</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:18</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"669eb873873abc10040dcbb5cebb3516","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>d3848c738772bc10040dcbb5cebb3543</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:19</sys_created_on>
+        <sys_id>669eb873873abc10040dcbb5cebb3516</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <trigger display_value="">058024af873a3c10040dcbb5cebb3585</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>669eb873873abc10040dcbb5cebb3516</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:19</sys_created_on>
+        <sys_id>669eb873873abc10040dcbb5cebb3517</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN669eb873873abc10040dcbb5cebb3516"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN8897c4f78772bc10040dcbb5cebb358a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Pour l'ensemble des incidents réseaux</comment>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>8897c4f78772bc10040dcbb5cebb358a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8897c4f78772bc10040dcbb5cebb358a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8897c4f78772bc10040dcbb5cebb358a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>4097c4f78772bc10040dcbb5cebb358c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:50</sys_updated_on>
+        <value>x_snc_gestion_in_0_incident_data</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8897c4f78772bc10040dcbb5cebb358a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>4897c4f78772bc10040dcbb5cebb358b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:50</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN1f848c738772bc10040dcbb5cebb3544"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d3848c738772bc10040dcbb5cebb3543</id>
+        <name>Incident Notification &amp; assignment</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:21:41</sys_created_on>
+        <sys_id>1f848c738772bc10040dcbb5cebb3544</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:21:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN0497c4f78772bc10040dcbb5cebb3582,3387c4f78772bc10040dcbb5cebb357a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</model>
+        <model_id>d3848c738772bc10040dcbb5cebb3543</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d3848c738772bc10040dcbb5cebb3543</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>0497c4f78772bc10040dcbb5cebb3582</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</model>
+        <model_id>d3848c738772bc10040dcbb5cebb3543</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d3848c738772bc10040dcbb5cebb3543</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>3387c4f78772bc10040dcbb5cebb357a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN9497c4f78772bc10040dcbb5cebb35f1,c497c4f78772bc10040dcbb5cebb35bd,c497c4f78772bc10040dcbb5cebb35e1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment>Envoi d'une notification au groupe Cockpit</comment>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <order>6</order>
+        <parent_ui_id>b499f516-806f-4363-a81a-4018f964bc09</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>9497c4f78772bc10040dcbb5cebb35f1</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:40</sys_updated_on>
+        <ui_id>aa990ec4-910e-46ca-9f4b-fe347a5f0600</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9497c4f78772bc10040dcbb5cebb35f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9497c4f78772bc10040dcbb5cebb35f1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:45:10</sys_created_on>
+        <sys_id>53e90cfb8772bc10040dcbb5cebb3501</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:55:29</sys_updated_on>
+        <value/>
+        <variable display_value="Webhook URL">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9497c4f78772bc10040dcbb5cebb35f1</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>9097c4f78772bc10040dcbb5cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <value>Voir l'incident</value>
+        <variable display_value="Action Name">859822431324030039a039ed9344b0f7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9497c4f78772bc10040dcbb5cebb35f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>9497c4f78772bc10040dcbb5cebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>1097c4f78772bc10040dcbb5cebb35f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>9497c4f78772bc10040dcbb5cebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>9897c4f78772bc10040dcbb5cebb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>https://tdefscesm1demo.service-now.com/now/gestion-incident-reseau/record/x_snc_gestion_in_0_incident_data/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>9497c4f78772bc10040dcbb5cebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>1497c4f78772bc10040dcbb5cebb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Un nouvel incident réseau "{{Created_1.current.short_description}}" a été détecté.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>9497c4f78772bc10040dcbb5cebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>d497c4f78772bc10040dcbb5cebb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Incident Réseau {{Created_1.current.number}}  détecté </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>9497c4f78772bc10040dcbb5cebb35f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>5c97c4f78772bc10040dcbb5cebb35f3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:55:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>{{a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.value}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Assignement à l'équipe Cockpit</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <order>2➛3</order>
+        <parent_ui_id>b6bd0b99-7b0a-4c22-b8b1-5a24bb80071e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>c497c4f78772bc10040dcbb5cebb35bd</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:40</sys_updated_on>
+        <ui_id>8380bbee-d587-42c0-8411-198a9301bdb4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c497c4f78772bc10040dcbb5cebb35bd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c497c4f78772bc10040dcbb5cebb35bd</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>4897c4f78772bc10040dcbb5cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <value>x_snc_gestion_in_0_incident_data</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c497c4f78772bc10040dcbb5cebb35bd</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>8497c4f78772bc10040dcbb5cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <value>assignment_group={"display":"Cockpit team","value":"4074238f8776b810040dcbb5cebb356c"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c497c4f78772bc10040dcbb5cebb35bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c497c4f78772bc10040dcbb5cebb35bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>4097c4f78772bc10040dcbb5cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c497c4f78772bc10040dcbb5cebb35bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>8897c4f78772bc10040dcbb5cebb35bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c497c4f78772bc10040dcbb5cebb35bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>0497c4f78772bc10040dcbb5cebb35c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get System Property">17507637db9c28507c47be6139961981</action_type>
+        <action_type_parent/>
+        <comment>Récupération du Teams d'entreprise</comment>
+        <compiled_snapshot>17507637db9c28507c47be6139961981</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <order>4➛5</order>
+        <parent_ui_id>b499f516-806f-4363-a81a-4018f964bc09</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>c497c4f78772bc10040dcbb5cebb35e1</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:40</sys_updated_on>
+        <ui_id>a13c2e1e-f856-4f6f-9503-ecee0d4c43c7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c497c4f78772bc10040dcbb5cebb35e1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c497c4f78772bc10040dcbb5cebb35e1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>4c97c4f78772bc10040dcbb5cebb35e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:00:54</sys_updated_on>
+        <value>teams_gestion_incidents_reseaux</value>
+        <variable display_value="Name">17507637db9c28507c47be6139961982</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_17507637db9c28507c47be6139961981^id=c497c4f78772bc10040dcbb5cebb35e1"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN4497c4f78772bc10040dcbb5cebb358e,8097c4f78772bc10040dcbb5cebb3592,8497c4f78772bc10040dcbb5cebb35c1"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0497c4f78772bc10040dcbb5cebb358d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>4497c4f78772bc10040dcbb5cebb358e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4497c4f78772bc10040dcbb5cebb358e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c897c4f78772bc10040dcbb5cebb3591</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>8097c4f78772bc10040dcbb5cebb3592</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <ui_id>b6bd0b99-7b0a-4c22-b8b1-5a24bb80071e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8097c4f78772bc10040dcbb5cebb3592"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cc97c4f78772bc10040dcbb5cebb35c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:51</sys_created_on>
+        <sys_id>8497c4f78772bc10040dcbb5cebb35c1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <ui_id>b499f516-806f-4363-a81a-4018f964bc09</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8497c4f78772bc10040dcbb5cebb35c1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d3848c738772bc10040dcbb5cebb3543^sys_idNOT IN0c97c4f78772bc10040dcbb5cebb3580,4897c4f78772bc10040dcbb5cebb3587"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d3848c738772bc10040dcbb5cebb3543</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>0c97c4f78772bc10040dcbb5cebb3580</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d3848c738772bc10040dcbb5cebb3543</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:34:50</sys_created_on>
+        <sys_id>4897c4f78772bc10040dcbb5cebb3587</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:34:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d3848c738772bc10040dcbb5cebb3543^sys_idNOT INe29eb873873abc10040dcbb5cebb3518"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e29eb873873abc10040dcbb5cebb3518","name":"plan","plan_signature":null}}</plan>
+        <plan_id>d3848c738772bc10040dcbb5cebb3543</plan_id>
+        <snapshot>2baefc73873abc10040dcbb5cebb352a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e29eb873873abc10040dcbb5cebb3518</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <trigger display_value="">058024af873a3c10040dcbb5cebb3585</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>incident_notification__assignment</internal_name>
+        <label_cache>[{"name":"Created_1.current.sys_id","label":"Trigger➛Incident Data Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"sys_id"},{"name":"Created_1.current.short_description","label":"Trigger➛Incident Data Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"short_description"},{"name":"Created_1.current.number","label":"Trigger➛Incident Data Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_incident_data","column_name":"number"},{"name":"aa990ec4-910e-46ca-9f4b-fe347a5f0600.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa990ec4-910e-46ca-9f4b-fe347a5f0600.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.__dont_treat_as_error__","label":"4➛5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.__action_status__","label":"4➛5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.name","label":"4➛5➛Name","reference_display":"Name","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fb24efcd-5cb6-474a-9211-e9c8690c7637"}},{"name":"a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.value","label":"4➛5➛Value","reference_display":"Value","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"30b337c1-2c64-441a-a3e3-d7d5812fff9b"}},{"name":"274bc397-c93e-4879-9cd6-7ed5ef564f43.__dont_treat_as_error__","label":"4➛5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"274bc397-c93e-4879-9cd6-7ed5ef564f43.__action_status__","label":"4➛5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"Created_1.current","label":"Trigger➛Incident Data Record","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"reference","base_type":"reference","attributes":{}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.__dont_treat_as_error__","label":"2➛3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.__action_status__","label":"2➛3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.table_name","label":"2➛3➛Incident Data Table","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8380bbee-d587-42c0-8411-198a9301bdb4.record","label":"2➛3➛Incident Data Record","reference":"x_snc_gestion_in_0_incident_data","reference_display":"Incident Data","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Incident Notification &amp; assignment</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Incident Notification &amp; assignment">d3848c738772bc10040dcbb5cebb3543</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f59e7873873abc10040dcbb5cebb3514</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:15</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f59e7873873abc10040dcbb5cebb3514"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f59e7873873abc10040dcbb5cebb3514"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=f59e7873873abc10040dcbb5cebb3514^sys_idNOT IN9a9e7873873abc10040dcbb5cebb359c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>Pour l'ensemble des incidents réseaux</comment>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>9a9e7873873abc10040dcbb5cebb359c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:19</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a9e7873873abc10040dcbb5cebb359c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9a9e7873873abc10040dcbb5cebb359c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>1e9e7873873abc10040dcbb5cebb359e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <value>x_snc_gestion_in_0_incident_data</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9a9e7873873abc10040dcbb5cebb359c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>5a9e7873873abc10040dcbb5cebb359e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f59e7873873abc10040dcbb5cebb3514^sys_idNOT INfd9e7873873abc10040dcbb5cebb3515"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f59e7873873abc10040dcbb5cebb3514</id>
+        <name>Incident Notification &amp; assignment</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>fd9e7873873abc10040dcbb5cebb3515</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=f59e7873873abc10040dcbb5cebb3514^sys_idNOT IN759e7873873abc10040dcbb5cebb3533,b59e7873873abc10040dcbb5cebb3517"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</model>
+        <model_id>f59e7873873abc10040dcbb5cebb3514</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f59e7873873abc10040dcbb5cebb3514</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>759e7873873abc10040dcbb5cebb3533</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</model>
+        <model_id>f59e7873873abc10040dcbb5cebb3514</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f59e7873873abc10040dcbb5cebb3514</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>b59e7873873abc10040dcbb5cebb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=f59e7873873abc10040dcbb5cebb3514^sys_idNOT IN429e7873873abc10040dcbb5cebb3577,429e7873873abc10040dcbb5cebb3583,4a9e7873873abc10040dcbb5cebb3599"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Assignement à l'équipe Cockpit</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <order>2➛3</order>
+        <parent_ui_id>b6bd0b99-7b0a-4c22-b8b1-5a24bb80071e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>429e7873873abc10040dcbb5cebb3577</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <ui_id>8380bbee-d587-42c0-8411-198a9301bdb4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=429e7873873abc10040dcbb5cebb3577"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>429e7873873abc10040dcbb5cebb3577</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>429e7873873abc10040dcbb5cebb357a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <value>x_snc_gestion_in_0_incident_data</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>429e7873873abc10040dcbb5cebb3577</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>4a9e7873873abc10040dcbb5cebb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <value>assignment_group={"display":"Cockpit team","value":"4074238f8776b810040dcbb5cebb356c"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=429e7873873abc10040dcbb5cebb3577"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>429e7873873abc10040dcbb5cebb3577</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>069e7873873abc10040dcbb5cebb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>429e7873873abc10040dcbb5cebb3577</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>4e9e7873873abc10040dcbb5cebb3578</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>429e7873873abc10040dcbb5cebb3577</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>c69e7873873abc10040dcbb5cebb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Get System Property">17507637db9c28507c47be6139961981</action_type>
+        <action_type_parent display_value="Get System Property">4b5f2ab3db9c28507c47be61399619ca</action_type_parent>
+        <comment>Récupération du Teams d'entreprise</comment>
+        <compiled_snapshot>17507637db9c28507c47be6139961981</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <order>4➛5</order>
+        <parent_ui_id>b499f516-806f-4363-a81a-4018f964bc09</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>429e7873873abc10040dcbb5cebb3583</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <ui_id>a13c2e1e-f856-4f6f-9503-ecee0d4c43c7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=429e7873873abc10040dcbb5cebb3583"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>429e7873873abc10040dcbb5cebb3583</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>869e7873873abc10040dcbb5cebb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <value>teams_gestion_incidents_reseaux</value>
+        <variable display_value="Name">17507637db9c28507c47be6139961982</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_17507637db9c28507c47be6139961981^id=429e7873873abc10040dcbb5cebb3583"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment>Envoi d'une notification au groupe Cockpit</comment>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <order>6</order>
+        <parent_ui_id>b499f516-806f-4363-a81a-4018f964bc09</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>4a9e7873873abc10040dcbb5cebb3599</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <ui_id>aa990ec4-910e-46ca-9f4b-fe347a5f0600</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a9e7873873abc10040dcbb5cebb3599"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4a9e7873873abc10040dcbb5cebb3599</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>069e7873873abc10040dcbb5cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <value>Voir l'incident</value>
+        <variable display_value="Action Name">859822431324030039a039ed9344b0f7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a9e7873873abc10040dcbb5cebb3599"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>4a9e7873873abc10040dcbb5cebb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>829e7873873abc10040dcbb5cebb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>4a9e7873873abc10040dcbb5cebb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>0e9e7873873abc10040dcbb5cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>https://tdefscesm1demo.service-now.com/now/gestion-incident-reseau/record/x_snc_gestion_in_0_incident_data/{{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>4a9e7873873abc10040dcbb5cebb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>869e7873873abc10040dcbb5cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Un nouvel incident réseau "{{Created_1.current.short_description}}" a été détecté.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>4a9e7873873abc10040dcbb5cebb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>4a9e7873873abc10040dcbb5cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Incident Réseau {{Created_1.current.number}}  détecté </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>4a9e7873873abc10040dcbb5cebb3599</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:17</sys_created_on>
+        <sys_id>ce9e7873873abc10040dcbb5cebb359b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>{{a13c2e1e-f856-4f6f-9503-ecee0d4c43c7.value}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f59e7873873abc10040dcbb5cebb3514^sys_idNOT IN0e9e7873873abc10040dcbb5cebb3552,399e7873873abc10040dcbb5cebb354e,8a9e7873873abc10040dcbb5cebb3555"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c897c4f78772bc10040dcbb5cebb3591</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>0e9e7873873abc10040dcbb5cebb3552</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <ui_id>b6bd0b99-7b0a-4c22-b8b1-5a24bb80071e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0e9e7873873abc10040dcbb5cebb3552"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0497c4f78772bc10040dcbb5cebb358d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>399e7873873abc10040dcbb5cebb354e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=399e7873873abc10040dcbb5cebb354e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cc97c4f78772bc10040dcbb5cebb35c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Incident Notification &amp; assignment">f59e7873873abc10040dcbb5cebb3514</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f9f47a31-64ef-426a-802a-fb3e01473e34</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>8a9e7873873abc10040dcbb5cebb3555</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <ui_id>b499f516-806f-4363-a81a-4018f964bc09</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8a9e7873873abc10040dcbb5cebb3555"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f59e7873873abc10040dcbb5cebb3514^sys_idNOT IN3d9e7873873abc10040dcbb5cebb353a,b19e7873873abc10040dcbb5cebb352f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f59e7873873abc10040dcbb5cebb3514</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>3d9e7873873abc10040dcbb5cebb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f59e7873873abc10040dcbb5cebb3514</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:35:16</sys_created_on>
+        <sys_id>b19e7873873abc10040dcbb5cebb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:35:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>d3848c738772bc10040dcbb5cebb3543</sys_id>
+        <latest_snapshot>f59e7873873abc10040dcbb5cebb3514</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

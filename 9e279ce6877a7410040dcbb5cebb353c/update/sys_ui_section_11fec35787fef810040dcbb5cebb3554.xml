@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Cloture" section_id="11fec35787fef810040dcbb5cebb3554" sys_domain="global" table="x_snc_gestion_in_0_incident_data" version="3" view="cloture">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>probleme_li</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>29fec35787fef810040dcbb5cebb3559</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_by</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>a1fec35787fef810040dcbb5cebb355a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>29fec35787fef810040dcbb5cebb355a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>adfec35787fef810040dcbb5cebb355a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>changement_li</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>25fec35787fef810040dcbb5cebb355b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_at</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>a9fec35787fef810040dcbb5cebb355b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_close_type</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_id>21fec35787fef810040dcbb5cebb355c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Cloture" display_value="Cloture" name="x_snc_gestion_in_0_incident_data" sys_domain="global" view="15fe835787fef810040dcbb5cebb35de">11fec35787fef810040dcbb5cebb3554</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Cloture</caption>
+            <header>false</header>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 09:49:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11fec35787fef810040dcbb5cebb3554</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_gestion_in_0_incident_data</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_ui_section_11fec35787fef810040dcbb5cebb3554</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 09:49:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="cloture" name="cloture">15fe835787fef810040dcbb5cebb35de</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>date_d_envoi_pr_vue</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 10:47:57</sys_created_on>
+        <sys_id>586c13971bb2f81098d8a796bd4bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>date_d_envoi_pr_vue</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_586c13971bb2f81098d8a796bd4bcb6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 10:47:57</sys_updated_on>
+        <table>x_snc_gestion_in_0_d_clenchement</table>
+        <ui_policy display_value="Make Delivery date mandatory">911cd7571bb2f81098d8a796bd4bcb71</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

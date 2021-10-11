@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>resolve_incident</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick() {
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	g_form.setValue('incident_state', 4);
+	g_form.setValue('state', 4);
+	g_form.setValue('resolved_by', g_user.userID, g_user.getFullName());
+
+	// Call the UI Action and skip the 'onclick' function
+	g_form.submit(g_form.getActionName());
+}]]></client_script_v2>
+        <comments/>
+        <condition>new global.IncidentUtils().canResolveIncident(current)</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Resolve</name>
+        <onclick>resolveIncident();</onclick>
+        <order>100</order>
+        <script><![CDATA[function resolveIncident(){
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	g_form.setValue('incident_state', 4);
+	g_form.setValue('state', 4);
+	g_form.setValue('resolved_by', g_user.userID);
+	
+	gsftSubmit(null, g_form.getFormElement(), 'resolve_incident'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+	serverResolve();
+
+function serverResolve(){
+	current.incident_state = IncidentState.RESOLVED;
+	current.state = IncidentState.RESOLVED;
+	current.resolved_by = gs.getUserID();
+	current.update();
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 14:21:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80903066873e7410040dcbb5cebb3527</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Resolve</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ui_action_80903066873e7410040dcbb5cebb3527</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 14:22:23</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

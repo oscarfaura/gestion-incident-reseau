@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="parent" label="Incident DATA" language="fr" table="x_snc_gestion_in_0_d_clenchement">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <help/>
+            <hint/>
+            <label>Incident DATA</label>
+            <language>fr</language>
+            <name>x_snc_gestion_in_0_d_clenchement</name>
+            <plural>Incidents DATA</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 11:06:44</sys_created_on>
+            <sys_id>afb02f5f1bb2f81098d8a796bd4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Incident DATA</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_gestion_in_0_d_clenchement_parent_fr</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 11:06:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

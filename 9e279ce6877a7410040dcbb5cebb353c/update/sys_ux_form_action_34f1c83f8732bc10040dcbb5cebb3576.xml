@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Escalader</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:10:46</sys_created_on>
+        <sys_id>34f1c83f8732bc10040dcbb5cebb3576</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Escalader</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_form_action_34f1c83f8732bc10040dcbb5cebb3576</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:10:46</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+        <ui_action display_value="Escalader">76a1c03f8732bc10040dcbb5cebb350a</ui_action>
+    </sys_ux_form_action>
+</record_update>

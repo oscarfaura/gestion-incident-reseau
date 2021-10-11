@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Purchasing Tasks Interceptor">c53f403b87b2bc10040dcbb5cebb35a9</macroponent>
+        <name>Set Query</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    if(api.context.props.parentTable == 'sn_shop_purchase_line')
+        api.setState('finalQuery','spend_purchase_requisition='+api.data.look_up_record_1.result.spend_purchase_requisition.value+'^purchase_line='+api.context.props.query);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:08:14</sys_created_on>
+        <sys_id>813f403b87b2bc10040dcbb5cebb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Query</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_client_script_813f403b87b2bc10040dcbb5cebb35be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:08:14</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+  "sysId" : "552c48888c033300964f4932b03eb092",
+  "table" : "incident"
+}</macroponent_config>
+        <screen display_value="DA Modal Page Default">93eb63d40f0310107d20409dc4767e70</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:08:24</sys_created_on>
+        <sys_id>773f043b87b2bc10040dcbb5cebb3526</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_773f043b87b2bc10040dcbb5cebb3526</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:08:24</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

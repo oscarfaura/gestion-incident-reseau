@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch1-hotfix1-09-15-2021_09-16-2021_1434.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Processus de notification des déclenchements par SMS </description>
+        <internal_name>sms_generation</internal_name>
+        <label_cache>[{"name":"Updated_1.current.texte","label":"Trigger➛Déclenchement Record➛Texte","reference":"","reference_display":"Texte","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"texte"},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.table_name","label":"5➛Déclenchement Table","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.record","label":"5➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.parent.short_description","label":"Trigger➛Déclenchement Record➛Incident DATA➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"task","column_name":"short_description"},{"name":"Updated_1.current.parent.number","label":"Trigger➛Déclenchement Record➛Incident DATA➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"3d262f68-3825-40bb-affd-337536cf752e.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.sms","label":"3➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.email","label":"3➛Email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"138380a7-e484-4080-b196-b42d33aa57b0"}},{"name":"aea6ad0c-c3d9-4355-82cb-8cf55e3bd34c.item","label":"2➛Astreinte Record","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current","label":"Trigger➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Table","label":"1➛Astreinte Table","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Records","label":"1➛Astreinte Records","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"54d3b811-0dea-4740-ac51-48c1b1f5f3e9.item","label":"2➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Created_1.current.texte","label":"Trigger➛Déclenchement Record➛Texte","reference":"","reference_display":"Texte","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"texte"},{"name":"Created_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.sms","label":"1➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"aea6ad0c-c3d9-4355-82cb-8cf55e3bd34c.item.operateur","label":"2➛Astreinte Record➛Opérateur","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_gestion_in_0_astreinte","column_name":"operateur"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item","label":"3➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member Record","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"Updated_1.current.u_astreintes","label":"Trigger➛Déclenchement Record➛Astreintes","reference":"sys_user_grmember","reference_display":"Group Member","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"u_astreintes"},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.sms","label":"4➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user","label":"3➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user.first_name","label":"3➛Group Member Record➛User➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user.last_name","label":"3➛Group Member Record➛User➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"57314082-7d15-4491-ab03-fbb40d780843.sms","label":"3➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current.type_d_envoi","label":"Trigger➛Déclenchement Record➛Type d\u0027envoi","reference":"","reference_display":"Type d\u0027envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"type_d_envoi"},{"name":"6d4ece82-9ad1-40aa-9ea4-87d10896aad8.total_duration","label":"5➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"6d4ece82-9ad1-40aa-9ea4-87d10896aad8.scheduled_end_date_time","label":"5➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.state","label":"2➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.record","label":"3➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.table_name","label":"3➛Déclenchement Table","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current.statut_envoi","label":"Trigger➛Déclenchement Record➛Statut envoi","reference":"","reference_display":"Statut envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"statut_envoi"},{"name":"Created_1.current.type_d_envoi","label":"Trigger➛Déclenchement Record➛Type d\u0027envoi","reference":"","reference_display":"Type d\u0027envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"type_d_envoi"},{"name":"Created_1.current.u_astreintes","label":"Trigger➛Déclenchement Record➛Astreintes","reference":"sys_user_grmember","reference_display":"Group Member","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"u_astreintes"}]</label_cache>
+        <master_snapshot>91ff1f8f1b7a781098d8a796bd4bcb33</master_snapshot>
+        <name>Gestion Déclenchements</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>b9ae393787febc10040dcbb5cebb3527</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:20:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6eee1b0f1b7a781098d8a796bd4bcb14</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_name>Gestion Déclenchements</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_hub_flow_6eee1b0f1b7a781098d8a796bd4bcb14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:52</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6eee1b0f1b7a781098d8a796bd4bcb14"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6eee1b0f1b7a781098d8a796bd4bcb14"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_gestion_in_0_d_clenchement">statut_envoi=0<item display_value="Non envoyé" endquery="false" field="statut_envoi" goto="false" newquery="false" operator="=" or="false" value="0"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:15:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9ae393787febc10040dcbb5cebb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:09</sys_updated_on>
+        <table>x_snc_gestion_in_0_d_clenchement</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"b5ae393787febc10040dcbb5cebb3528","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>6eee1b0f1b7a781098d8a796bd4bcb14</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:15:09</sys_created_on>
+        <sys_id>b5ae393787febc10040dcbb5cebb3528</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:09</sys_updated_on>
+        <trigger display_value="">b9ae393787febc10040dcbb5cebb3527</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>b5ae393787febc10040dcbb5cebb3528</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:15:09</sys_created_on>
+        <sys_id>fdae393787febc10040dcbb5cebb3528</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT INb5ae393787febc10040dcbb5cebb3528"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN6e4efdb387febc10040dcbb5cebb35a9"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:13:34</sys_created_on>
+        <sys_id>6e4efdb387febc10040dcbb5cebb35a9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:51</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e4efdb387febc10040dcbb5cebb35a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6e4efdb387febc10040dcbb5cebb35a9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:13:34</sys_created_on>
+        <sys_id>224efdb387febc10040dcbb5cebb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:13:34</sys_updated_on>
+        <value>statut_envoi=0</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6e4efdb387febc10040dcbb5cebb35a9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:13:34</sys_created_on>
+        <sys_id>2a4efdb387febc10040dcbb5cebb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:13:34</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN6aee1b0f1b7a781098d8a796bd4bcb16"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6eee1b0f1b7a781098d8a796bd4bcb14</id>
+        <name>SMS generation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:20:16</sys_created_on>
+        <sys_id>6aee1b0f1b7a781098d8a796bd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:20:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN63ef9b8f1b7a781098d8a796bd4bcbb6,e7ef9b8f1b7a781098d8a796bd4bcbbe"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</model>
+        <model_id>6eee1b0f1b7a781098d8a796bd4bcb14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6eee1b0f1b7a781098d8a796bd4bcb14</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:42</sys_created_on>
+        <sys_id>63ef9b8f1b7a781098d8a796bd4bcbb6</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</model>
+        <model_id>6eee1b0f1b7a781098d8a796bd4bcb14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6eee1b0f1b7a781098d8a796bd4bcb14</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:43</sys_created_on>
+        <sys_id>e7ef9b8f1b7a781098d8a796bd4bcbbe</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN504ac52f1b7ef81098d8a796bd4bcb50,a7c2c57b1bb67c1098d8a796bd4bcbc4,acab347f1b767c1098d8a796bd4bcb48"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>Mise à jour Statut d'envoi du Déclenchement</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>504ac52f1b7ef81098d8a796bd4bcb50</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-05 12:37:10</sys_updated_on>
+        <ui_id>882464dc-c857-4569-a450-29686ec1b5b4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=504ac52f1b7ef81098d8a796bd4bcb50"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>504ac52f1b7ef81098d8a796bd4bcb50</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>d04ac52f1b7ef81098d8a796bd4bcb53</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:14:52</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>504ac52f1b7ef81098d8a796bd4bcb50</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>d84ac52f1b7ef81098d8a796bd4bcb52</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:14:52</sys_updated_on>
+        <value>statut_envoi=1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=504ac52f1b7ef81098d8a796bd4bcb50"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>504ac52f1b7ef81098d8a796bd4bcb50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>944ac52f1b7ef81098d8a796bd4bcb52</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:14:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>504ac52f1b7ef81098d8a796bd4bcb50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>dc4ac52f1b7ef81098d8a796bd4bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 18:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>504ac52f1b7ef81098d8a796bd4bcb50</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 18:47:44</sys_created_on>
+        <sys_id>584ac52f1b7ef81098d8a796bd4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 18:47:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent/>
+        <comment>Attente de la date d'envoi définie</comment>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <order>2</order>
+        <parent_ui_id>aeeb5d5a-25c0-4572-bafe-ce42e7ed39b0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>a7c2c57b1bb67c1098d8a796bd4bcbc4</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-05 12:37:10</sys_updated_on>
+        <ui_id>8715cf26-491f-48f7-9ab1-062a92c1fb81</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a7c2c57b1bb67c1098d8a796bd4bcbc4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7c2c57b1bb67c1098d8a796bd4bcbc4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>6fc2c57b1bb67c1098d8a796bd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:53:40</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a7c2c57b1bb67c1098d8a796bd4bcbc4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:19:19</sys_created_on>
+        <sys_id>c666517b1b3a7c1098d8a796bd4bcb6f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:22:15</sys_updated_on>
+        <value>date_d_envoi_pr_vue&lt;=javascript:gs.endOfCurrentMinute()</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a7c2c57b1bb67c1098d8a796bd4bcbc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a7c2c57b1bb67c1098d8a796bd4bcbc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:19:19</sys_created_on>
+        <sys_id>4266517b1b3a7c1098d8a796bd4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:19:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a7c2c57b1bb67c1098d8a796bd4bcbc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>2bc2c57b1bb67c1098d8a796bd4bcbc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:13:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a7c2c57b1bb67c1098d8a796bd4bcbc4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>ebc2c57b1bb67c1098d8a796bd4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:53:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a7c2c57b1bb67c1098d8a796bd4bcbc4^sys_idNOT IN67c2c57b1bb67c1098d8a796bd4bcbc6,f36555f71b3a7c1098d8a796bd4bcbc5"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>conditions</input_name>
+        <instance>a7c2c57b1bb67c1098d8a796bd4bcbc4</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n**\n**Requires GlideRecord encodedQuery response, example:\n**\"active\u003dtrue^short_descriptionSTARTSWITHtest\";\n*/\nvar date_envoi_atteinte \u003d 0;\nvar dt_now \u003d new GlideDateTime();\nif (fd_data.trigger.current.date_d_envoi_pr_vue \u003c\u003d dt_now)\n    date_envoi_atteinte \u003d 1;\nreturn date_envoi_atteinte;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>67c2c57b1bb67c1098d8a796bd4bcbc6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:19:18</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>a7c2c57b1bb67c1098d8a796bd4bcbc4</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:15:04</sys_created_on>
+        <sys_id>f36555f71b3a7c1098d8a796bd4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:15:04</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send SMS">6d67c7c0736633004b134a2214f6a76d</action_type>
+        <action_type_parent/>
+        <comment>Envoi d'un SMS vers l'opérateur de l'astreinte</comment>
+        <compiled_snapshot>6d67c7c0736633004b134a2214f6a76d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <order>4</order>
+        <parent_ui_id>8026ba60-105f-4349-a1ee-565f800a1299</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>acab347f1b767c1098d8a796bd4bcb48</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-10-05 12:37:10</sys_updated_on>
+        <ui_id>4a3ae239-b0cd-4dcf-801a-66780aa26219</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=acab347f1b767c1098d8a796bd4bcb48"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acab347f1b767c1098d8a796bd4bcb48</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>24ab347f1b767c1098d8a796bd4bcb4c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:40:00</sys_updated_on>
+        <value>+33787415675</value>
+        <variable display_value="To">e167c7c0736633004b134a2214f6a774</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acab347f1b767c1098d8a796bd4bcb48</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>68ab347f1b767c1098d8a796bd4bcb4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:56:10</sys_updated_on>
+        <value>ServiceNow</value>
+        <variable display_value="From">ed67c7c0736633004b134a2214f6a76e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acab347f1b767c1098d8a796bd4bcb48</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 17:13:35</sys_created_on>
+        <sys_id>fe4efdb387febc10040dcbb5cebb35c0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:14:00</sys_updated_on>
+        <value/>
+        <variable display_value="Text Message">ed67c7c0736633004b134a2214f6a778</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=acab347f1b767c1098d8a796bd4bcb48"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>from</field>
+        <id>acab347f1b767c1098d8a796bd4bcb48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>24ab347f1b767c1098d8a796bd4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:22:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>text_message</field>
+        <id>acab347f1b767c1098d8a796bd4bcb48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>60ab347f1b767c1098d8a796bd4bcb4b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value>Bonjour {{8026ba60-105f-4349-a1ee-565f800a1299.item.user.first_name}} {{8026ba60-105f-4349-a1ee-565f800a1299.item.user.last_name}},
+Vous venez d'etre assigné à l'Incident Data suivant :
+N° : {{Updated_1.current.parent.number}}
+Description : {{Updated_1.current.parent.short_description}}
+
+Message spécifique : {{Updated_1.current.texte}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>to</field>
+        <id>acab347f1b767c1098d8a796bd4bcb48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:20</sys_created_on>
+        <sys_id>e4ab347f1b767c1098d8a796bd4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:22:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN1bc2c57b1bb67c1098d8a796bd4bcbb8,d8ab347f1b767c1098d8a796bd4bcb31"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1fc2c57b1bb67c1098d8a796bd4bcbb7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:39</sys_created_on>
+        <sys_id>1bc2c57b1bb67c1098d8a796bd4bcbb8</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:51</sys_updated_on>
+        <ui_id>aeeb5d5a-25c0-4572-bafe-ce42e7ed39b0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1bc2c57b1bb67c1098d8a796bd4bcbb8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1bc2c57b1bb67c1098d8a796bd4bcbb8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>a7c2c57b1bb67c1098d8a796bd4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:53:40</sys_updated_on>
+        <value>Si envoi différé</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1bc2c57b1bb67c1098d8a796bd4bcbb8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1bc2c57b1bb67c1098d8a796bd4bcbb8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>27c2c57b1bb67c1098d8a796bd4bcbbe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:13:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.type_d_envoi}}=differe</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1bc2c57b1bb67c1098d8a796bd4bcbb8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:53:40</sys_created_on>
+        <sys_id>6fc2c57b1bb67c1098d8a796bd4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:53:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5cab347f1b767c1098d8a796bd4bcb30</block>
+        <comment>Pour chaque astreinte associée au Déclenchement</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:19</sys_created_on>
+        <sys_id>d8ab347f1b767c1098d8a796bd4bcb31</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 18:00:52</sys_updated_on>
+        <ui_id>8026ba60-105f-4349-a1ee-565f800a1299</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d8ab347f1b767c1098d8a796bd4bcb31"/>
+    <sys_element_mapping action="delete_multiple" query="id=d8ab347f1b767c1098d8a796bd4bcb31"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>d8ab347f1b767c1098d8a796bd4bcb31</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 12:22:19</sys_created_on>
+        <sys_id>64ab347f1b767c1098d8a796bd4bcb35</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:13:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{Created_1.current.u_astreintes}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT INa7ef9b8f1b7a781098d8a796bd4bcbc3,afef9b8f1b7a781098d8a796bd4bcbbc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6eee1b0f1b7a781098d8a796bd4bcb14</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:43</sys_created_on>
+        <sys_id>a7ef9b8f1b7a781098d8a796bd4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:24:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6eee1b0f1b7a781098d8a796bd4bcb14</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:43</sys_created_on>
+        <sys_id>afef9b8f1b7a781098d8a796bd4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:24:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6eee1b0f1b7a781098d8a796bd4bcb14^sys_idNOT IN57ff97cf1b7a781098d8a796bd4bcbce"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"57ff97cf1b7a781098d8a796bd4bcbce","name":"plan","plan_signature":null}}</plan>
+        <plan_id>6eee1b0f1b7a781098d8a796bd4bcb14</plan_id>
+        <snapshot>ec6529c987c3f450040dcbb5cebb35c2</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57ff97cf1b7a781098d8a796bd4bcbce</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:09</sys_updated_on>
+        <trigger display_value="">b9ae393787febc10040dcbb5cebb3527</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Processus de notification des déclenchements par SMS </description>
+        <internal_name>sms_generation</internal_name>
+        <label_cache>[{"name":"Created_1.current.u_astreintes","label":"Trigger➛Déclenchement Record➛Astreintes","reference":"sys_user_grmember","reference_display":"Group Member","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"u_astreintes"},{"name":"Created_1.current.type_d_envoi","label":"Trigger➛Déclenchement Record➛Type d\u0027envoi","reference":"","reference_display":"Type d\u0027envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"type_d_envoi"},{"name":"Created_1.current.statut_envoi","label":"Trigger➛Déclenchement Record➛Statut envoi","reference":"","reference_display":"Statut envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"statut_envoi"},{"name":"Created_1.current","label":"Trigger➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.table_name","label":"3➛Déclenchement Table","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4423df94-94ba-4def-892e-cb64a29c2293.record","label":"3➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8715cf26-491f-48f7-9ab1-062a92c1fb81.state","label":"2➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"6d4ece82-9ad1-40aa-9ea4-87d10896aad8.scheduled_end_date_time","label":"5➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"6d4ece82-9ad1-40aa-9ea4-87d10896aad8.total_duration","label":"5➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"Updated_1.current.type_d_envoi","label":"Trigger➛Déclenchement Record➛Type d\u0027envoi","reference":"","reference_display":"Type d\u0027envoi","type":"choice","base_type":"choice","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"type_d_envoi"},{"name":"57314082-7d15-4491-ab03-fbb40d780843.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"57314082-7d15-4491-ab03-fbb40d780843.sms","label":"3➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user.last_name","label":"3➛Group Member Record➛User➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user.first_name","label":"3➛Group Member Record➛User➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item.user","label":"3➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user"},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.__dont_treat_as_error__","label":"4➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.__action_status__","label":"4➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.status","label":"4➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.error_message","label":"4➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"4a3ae239-b0cd-4dcf-801a-66780aa26219.sms","label":"4➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"Updated_1.current.u_astreintes","label":"Trigger➛Déclenchement Record➛Astreintes","reference":"sys_user_grmember","reference_display":"Group Member","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"u_astreintes"},{"name":"8026ba60-105f-4349-a1ee-565f800a1299.item","label":"3➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"aea6ad0c-c3d9-4355-82cb-8cf55e3bd34c.item.operateur","label":"2➛Astreinte Record➛Opérateur","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_gestion_in_0_astreinte","column_name":"operateur"},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.sms","label":"1➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"34e7a8fa-e5f2-4b2c-9485-377e204465ee.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"Created_1.current.texte","label":"Trigger➛Déclenchement Record➛Texte","reference":"","reference_display":"Texte","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"texte"},{"name":"54d3b811-0dea-4740-ac51-48c1b1f5f3e9.item","label":"2➛Items","reference_display":"Items","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Records","label":"1➛Astreinte Records","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Table","label":"1➛Astreinte Table","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e07397f8-4996-40b8-bb9e-6c4604fe05f1.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current","label":"Trigger➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{}},{"name":"aea6ad0c-c3d9-4355-82cb-8cf55e3bd34c.item","label":"2➛Astreinte Record","reference":"x_snc_gestion_in_0_astreinte","reference_display":"Astreinte","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.email","label":"3➛Email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"138380a7-e484-4080-b196-b42d33aa57b0"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"75ac1bb1-2ff3-453f-af58-94f41ef8244b.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.sms","label":"3➛SMS","reference_display":"SMS","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FD334c7f045f221010a4a1564b2978a2e4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"70a4caeb-6e67-482e-b65e-a15e339599da"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ee4c3482-5278-42dc-b923-c41a3c44a9cf"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"63a269e9-af31-4e5b-95aa-2d20a23e0a37"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d262f68-3825-40bb-affd-337536cf752e.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.parent.number","label":"Trigger➛Déclenchement Record➛Incident DATA➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"task","column_name":"number"},{"name":"Updated_1.current.parent.short_description","label":"Trigger➛Déclenchement Record➛Incident DATA➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"task","column_name":"short_description"},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.record","label":"5➛Déclenchement Record","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.table_name","label":"5➛Déclenchement Table","reference":"x_snc_gestion_in_0_d_clenchement","reference_display":"Déclenchement","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"882464dc-c857-4569-a450-29686ec1b5b4.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.texte","label":"Trigger➛Déclenchement Record➛Texte","reference":"","reference_display":"Texte","type":"string","base_type":"string","parent_table_name":"x_snc_gestion_in_0_d_clenchement","column_name":"texte"}]</label_cache>
+        <master>true</master>
+        <name>Gestion Déclenchements</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Gestion Déclenchements">6eee1b0f1b7a781098d8a796bd4bcb14</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91ff1f8f1b7a781098d8a796bd4bcb33</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=91ff1f8f1b7a781098d8a796bd4bcb33"/>
+    <sys_variable_value action="delete_multiple" query="document_key=91ff1f8f1b7a781098d8a796bd4bcb33"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN3eff57cf1b7a781098d8a796bd4bcbd9"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:56</sys_created_on>
+        <sys_id>3eff57cf1b7a781098d8a796bd4bcbd9</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:10</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3eff57cf1b7a781098d8a796bd4bcbd9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3eff57cf1b7a781098d8a796bd4bcbd9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:56</sys_created_on>
+        <sys_id>3aff57cf1b7a781098d8a796bd4bcbdb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 16:30:32</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3eff57cf1b7a781098d8a796bd4bcbd9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:56</sys_created_on>
+        <sys_id>76ff57cf1b7a781098d8a796bd4bcbdb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:05</sys_updated_on>
+        <value>statut_envoi=0</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3eff57cf1b7a781098d8a796bd4bcbd9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>e2da55f387fabc10040dcbb5cebb3531</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3eff57cf1b7a781098d8a796bd4bcbd9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>eada55f387fabc10040dcbb5cebb3530</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <value>statut_envoi=0</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN19ff1f8f1b7a781098d8a796bd4bcb34"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>91ff1f8f1b7a781098d8a796bd4bcb33</id>
+        <name>SMS generation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:50</sys_created_on>
+        <sys_id>19ff1f8f1b7a781098d8a796bd4bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:24:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN2eff57cf1b7a781098d8a796bd4bcb87,9dff1f8f1b7a781098d8a796bd4bcb35"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</model>
+        <model_id>91ff1f8f1b7a781098d8a796bd4bcb33</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_91ff1f8f1b7a781098d8a796bd4bcb33</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:55</sys_created_on>
+        <sys_id>2eff57cf1b7a781098d8a796bd4bcb87</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</model>
+        <model_id>91ff1f8f1b7a781098d8a796bd4bcb33</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_91ff1f8f1b7a781098d8a796bd4bcb33</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:50</sys_created_on>
+        <sys_id>9dff1f8f1b7a781098d8a796bd4bcb35</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN32da55f387fabc10040dcbb5cebb355a,beda55f387fabc10040dcbb5cebb3562,e6da55f387fabc10040dcbb5cebb3539"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send SMS">6d67c7c0736633004b134a2214f6a76d</action_type>
+        <action_type_parent display_value="Send SMS">10154780736633004b134a2214f6a731</action_type_parent>
+        <comment>Envoi d'un SMS vers l'opérateur de l'astreinte</comment>
+        <compiled_snapshot>6d67c7c0736633004b134a2214f6a76d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <order>4</order>
+        <parent_ui_id>8026ba60-105f-4349-a1ee-565f800a1299</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>32da55f387fabc10040dcbb5cebb355a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <ui_id>4a3ae239-b0cd-4dcf-801a-66780aa26219</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=32da55f387fabc10040dcbb5cebb355a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>32da55f387fabc10040dcbb5cebb355a</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>3ada55f387fabc10040dcbb5cebb355c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:41:45</sys_updated_on>
+        <value>+33787415675</value>
+        <variable display_value="To">e167c7c0736633004b134a2214f6a774</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>32da55f387fabc10040dcbb5cebb355a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>76da55f387fabc10040dcbb5cebb355c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <value>ServiceNow</value>
+        <variable display_value="From">ed67c7c0736633004b134a2214f6a76e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=32da55f387fabc10040dcbb5cebb355a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>from</field>
+        <id>32da55f387fabc10040dcbb5cebb355a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>32da55f387fabc10040dcbb5cebb355c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>text_message</field>
+        <id>32da55f387fabc10040dcbb5cebb355a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>7eda55f387fabc10040dcbb5cebb355b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value>Bonjour {{8026ba60-105f-4349-a1ee-565f800a1299.item.user.first_name}} {{8026ba60-105f-4349-a1ee-565f800a1299.item.user.last_name}},
+Vous venez d'etre assigné à l'Incident Data suivant :
+N° : {{Updated_1.current.parent.number}}
+Description : {{Updated_1.current.parent.short_description}}
+Message spécifique : {{Updated_1.current.texte}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>to</field>
+        <id>32da55f387fabc10040dcbb5cebb355a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>f2da55f387fabc10040dcbb5cebb355c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6d67c7c0736633004b134a2214f6a76d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>Mise à jour Statut d'envoi du Déclenchement</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>beda55f387fabc10040dcbb5cebb3562</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <ui_id>882464dc-c857-4569-a450-29686ec1b5b4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=beda55f387fabc10040dcbb5cebb3562"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>beda55f387fabc10040dcbb5cebb3562</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>beda55f387fabc10040dcbb5cebb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>beda55f387fabc10040dcbb5cebb3562</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>fada55f387fabc10040dcbb5cebb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <value>statut_envoi=1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=beda55f387fabc10040dcbb5cebb3562"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>beda55f387fabc10040dcbb5cebb3562</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>b6da55f387fabc10040dcbb5cebb3564</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>beda55f387fabc10040dcbb5cebb3562</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>f2da55f387fabc10040dcbb5cebb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>beda55f387fabc10040dcbb5cebb3562</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>7ada55f387fabc10040dcbb5cebb3564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment>Attente de la date d'envoi définie</comment>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <order>2</order>
+        <parent_ui_id>aeeb5d5a-25c0-4572-bafe-ce42e7ed39b0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>e6da55f387fabc10040dcbb5cebb3539</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <ui_id>8715cf26-491f-48f7-9ab1-062a92c1fb81</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e6da55f387fabc10040dcbb5cebb3539"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e6da55f387fabc10040dcbb5cebb3539</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>26da55f387fabc10040dcbb5cebb353d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <value>x_snc_gestion_in_0_d_clenchement</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e6da55f387fabc10040dcbb5cebb3539</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>62da55f387fabc10040dcbb5cebb353d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <value>date_d_envoi_pr_vue&lt;=javascript:gs.endOfCurrentMinute()</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e6da55f387fabc10040dcbb5cebb3539"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e6da55f387fabc10040dcbb5cebb3539</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>2eda55f387fabc10040dcbb5cebb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e6da55f387fabc10040dcbb5cebb3539</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>66da55f387fabc10040dcbb5cebb353c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e6da55f387fabc10040dcbb5cebb3539</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>eeda55f387fabc10040dcbb5cebb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e6da55f387fabc10040dcbb5cebb3539^sys_idNOT IN2ada55f387fabc10040dcbb5cebb353b,6eda55f387fabc10040dcbb5cebb353a"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>conditions</input_name>
+        <instance>e6da55f387fabc10040dcbb5cebb3539</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"conditions":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n**\n**Requires GlideRecord encodedQuery response, example:\n**\"active\u003dtrue^short_descriptionSTARTSWITHtest\";\n*/\nvar date_envoi_atteinte \u003d 0;\nvar dt_now \u003d new GlideDateTime();\nif (fd_data.trigger.current.date_d_envoi_pr_vue \u003c\u003d dt_now)\n    date_envoi_atteinte \u003d 1;\nreturn date_envoi_atteinte;"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>2ada55f387fabc10040dcbb5cebb353b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>e6da55f387fabc10040dcbb5cebb3539</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:44</sys_created_on>
+        <sys_id>6eda55f387fabc10040dcbb5cebb353a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:44</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN3eda55f387fabc10040dcbb5cebb3565,7eda55f387fabc10040dcbb5cebb356b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">1fc2c57b1bb67c1098d8a796bd4bcbb7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>3eda55f387fabc10040dcbb5cebb3565</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <ui_id>aeeb5d5a-25c0-4572-bafe-ce42e7ed39b0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3eda55f387fabc10040dcbb5cebb3565"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3eda55f387fabc10040dcbb5cebb3565</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>feda55f387fabc10040dcbb5cebb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <value>Si envoi différé</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3eda55f387fabc10040dcbb5cebb3565"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3eda55f387fabc10040dcbb5cebb3565</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>7eda55f387fabc10040dcbb5cebb356a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.type_d_envoi}}=differe</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3eda55f387fabc10040dcbb5cebb3565</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>bada55f387fabc10040dcbb5cebb356a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 14:38:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5cab347f1b767c1098d8a796bd4bcb30</block>
+        <comment>Pour chaque astreinte associée au Déclenchement</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Gestion Déclenchements">91ff1f8f1b7a781098d8a796bd4bcb33</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>7eda55f387fabc10040dcbb5cebb356b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <ui_id>8026ba60-105f-4349-a1ee-565f800a1299</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7eda55f387fabc10040dcbb5cebb356b"/>
+    <sys_element_mapping action="delete_multiple" query="id=7eda55f387fabc10040dcbb5cebb356b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7eda55f387fabc10040dcbb5cebb356b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 14:38:45</sys_created_on>
+        <sys_id>32da55f387fabc10040dcbb5cebb356f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 17:15:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{Created_1.current.u_astreintes}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_91ff1f8f1b7a781098d8a796bd4bcb33^sys_idNOT IN6eff57cf1b7a781098d8a796bd4bcb8e,aaff57cf1b7a781098d8a796bd4bcb83"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_91ff1f8f1b7a781098d8a796bd4bcb33</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:56</sys_created_on>
+        <sys_id>6eff57cf1b7a781098d8a796bd4bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:24:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_91ff1f8f1b7a781098d8a796bd4bcb33</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 16:24:55</sys_created_on>
+        <sys_id>aaff57cf1b7a781098d8a796bd4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 16:24:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>6eee1b0f1b7a781098d8a796bd4bcb14</sys_id>
+        <latest_snapshot>91ff1f8f1b7a781098d8a796bd4bcb33</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Déclenchement" max_length="40" name="x_snc_gestion_in_0_d_clenchement" sizeclass="8" type="collection">
+        <element label="Date d'envoi prévue" max_length="40" name="date_d_envoi_pr_vue" type="glide_date_time"/>
+        <element choice="3" default="0" label="Statut envoi" max_length="40" name="statut_envoi" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Non envoyé" sequence="10" value="0"/>
+                <element inactive_on_update="false" label="Envoyé" sequence="20" value="1"/>
+            </choice>
+        </element>
+        <element label="Texte" mandatory="true" max_length="5000" name="texte" type="string"/>
+        <element choice="3" default="differe" label="Type d'envoi" max_length="40" name="type_d_envoi" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Différé" sequence="10" value="differe"/>
+                <element inactive_on_update="false" label="Immédiat" sequence="20" value="immediat"/>
+            </choice>
+        </element>
+        <element label="Astreintes" max_length="4000" name="u_astreintes" reference="sys_user_grmember" reference_qual="groupSTARTSWITHSN1^ORgroupSTARTSWITHOSD^EQ" reference_qual_condition="groupSTARTSWITHSN1^ORgroupSTARTSWITHOSD^EQ" type="glide_list"/>
+    </element>
+</database>

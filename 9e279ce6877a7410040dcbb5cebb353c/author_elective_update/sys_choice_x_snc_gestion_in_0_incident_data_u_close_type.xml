@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_close_type" table="x_snc_gestion_in_0_incident_data" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_close_type</element>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 08:51:36</sys_created_on>
+            <sys_id>90aeec7287f6f410040dcbb5cebb3577</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_close_type</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_choice_x_snc_gestion_in_0_incident_data_u_close_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 08:51:36</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_close_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solution implementée</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 08:51:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58aeec7287f6f410040dcbb5cebb3576</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 08:51:36</sys_updated_on>
+            <value>solution_implementee</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_close_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Solution repoussée</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 08:51:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98aeec7287f6f410040dcbb5cebb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 08:51:36</sys_updated_on>
+            <value>solution_repoussee</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_close_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pas de solution</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_incident_data</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-28 08:51:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14aeec7287f6f410040dcbb5cebb3586</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-28 08:51:36</sys_updated_on>
+            <value>pas de solution</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

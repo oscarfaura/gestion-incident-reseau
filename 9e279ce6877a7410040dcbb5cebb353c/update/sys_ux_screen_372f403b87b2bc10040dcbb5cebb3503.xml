@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Gestion Incident Reseau Config">a84fa8a2353e7410306b6ccacc4cdf0b</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Attachment">bb2f403b87b2bc10040dcbb5cebb3500</macroponent>
+        <macroponent_config>{
+  "table" : "@data.gform.nowRecordFormBlob.table",
+  "sysId" : "@data.gform.nowRecordFormBlob.sysId",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "sysid" : ""
+}</macroponent_config>
+        <name>Attachment</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">071f0cf787b2bc10040dcbb5cebb35e8</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Attachment">d32f003b87b2bc10040dcbb5cebb3562</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:08:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>372f403b87b2bc10040dcbb5cebb3503</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Attachment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_screen_372f403b87b2bc10040dcbb5cebb3503</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:08:08</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=372f403b87b2bc10040dcbb5cebb3503"/>
+</record_update>

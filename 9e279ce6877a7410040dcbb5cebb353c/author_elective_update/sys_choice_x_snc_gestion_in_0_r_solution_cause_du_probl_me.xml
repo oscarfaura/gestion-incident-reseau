@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cause_du_probl_me" table="x_snc_gestion_in_0_r_solution" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cause_du_probl_me</element>
+            <name>x_snc_gestion_in_0_r_solution</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 07:44:00</sys_created_on>
+            <sys_id>695276d3873ef810040dcbb5cebb35b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cause_du_probl_me</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_choice_x_snc_gestion_in_0_r_solution_cause_du_probl_me</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 07:44:00</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cause_du_probl_me</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Serveur IP</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_r_solution</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 07:44:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad5276d3873ef810040dcbb5cebb35b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 07:44:00</sys_updated_on>
+            <value>serveur_ip</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cause_du_probl_me</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Load Balancer</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_r_solution</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 07:44:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>755276d3873ef810040dcbb5cebb35d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 07:44:00</sys_updated_on>
+            <value>load_balancer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cause_du_probl_me</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Branchements</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_r_solution</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 07:44:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f552fe93873ef810040dcbb5cebb356d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 07:44:01</sys_updated_on>
+            <value>branchements</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cause_du_probl_me</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mauvaise version</label>
+            <language>en</language>
+            <name>x_snc_gestion_in_0_r_solution</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-30 07:44:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d5276d3873ef810040dcbb5cebb35e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-30 07:44:01</sys_updated_on>
+            <value>mauvaise_version</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

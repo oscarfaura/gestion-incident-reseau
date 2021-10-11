@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_unix_server" version="2" view="RPTbed1bfaf1b7e3c1098d8a796bd4bcbcb">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cpu_speed</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="8fd1bfaf1b7e3c1098d8a796bd4bcbce">c3d1bfaf1b7e3c1098d8a796bd4bcbd0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-01 07:00:01</sys_created_on>
+            <sys_id>43d1bfaf1b7e3c1098d8a796bd4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-01 07:00:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ram</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="8fd1bfaf1b7e3c1098d8a796bd4bcbce">c3d1bfaf1b7e3c1098d8a796bd4bcbd0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-01 07:00:01</sys_created_on>
+            <sys_id>4bd1bfaf1b7e3c1098d8a796bd4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-01 07:00:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cpu_core_count</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="8fd1bfaf1b7e3c1098d8a796bd4bcbce">c3d1bfaf1b7e3c1098d8a796bd4bcbd0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-01 07:00:01</sys_created_on>
+            <sys_id>4fd1bfaf1b7e3c1098d8a796bd4bcbd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-01 07:00:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_unix_server</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-01 07:00:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3d1bfaf1b7e3c1098d8a796bd4bcbd0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_unix_server</sys_name>
+            <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_unix_server_RPTbed1bfaf1b7e3c1098d8a796bd4bcbcb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-01 07:00:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptbed1bfaf1b7e3c1098d8a796bd4bcbcb" name="RPTbed1bfaf1b7e3c1098d8a796bd4bcbcb">8fd1bfaf1b7e3c1098d8a796bd4bcbce</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

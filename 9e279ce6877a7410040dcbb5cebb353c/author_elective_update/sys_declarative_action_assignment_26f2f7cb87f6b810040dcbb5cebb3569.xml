@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="DELETE">
+        <action/>
+        <action_attributes>{"activityView":"stacked","playbookExperienceId":"14f99f878736b810040dcbb5cebb35ec","parentSysId":"{{sysId}}","parentTable":"{{table}}","compactMode":"","recordGeneratorQuery":"","isNewParentRecord":""}</action_attributes>
+        <action_name>test</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>true</active>
+        <button_type>primary</button_type>
+        <client_action/>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>action_component</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon display_value="playbook-fill">playbook_fill</design_icon>
+        <enabled>true</enabled>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>contexual_sidebar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon/>
+        <label>test</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <model_conditions/>
+        <model_field_required/>
+        <order>0</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions/>
+        <record_selection_required>false</record_selection_required>
+        <required_roles/>
+        <requires_value>false</requires_value>
+        <script_condition>sn_playbook.PlaybookExperience.parentRecordContainsPlaybook(current)</script_condition>
+        <server_script/>
+        <specificity>21</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 17:48:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>26f2f7cb87f6b810040dcbb5cebb3569</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_26f2f7cb87f6b810040dcbb5cebb3569</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 17:48:57</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+        <tooltip/>
+        <ui_component display_value="now-playbook-experience">9d0bc73916d784d8692b89e9553124dc</ui_component>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_translated_text action="DELETE" query="documentkey=26f2f7cb87f6b810040dcbb5cebb3569"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</application>
+        <file_path/>
+        <instance_id>7484d99edba36410431011f84896195b</instance_id>
+        <instance_name>tdefscesm1demo</instance_name>
+        <name>sys_declarative_action_assignment_26f2f7cb87f6b810040dcbb5cebb3569</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment"><sys_declarative_action_assignment action="INSERT_OR_UPDATE"><action/><action_attributes>{"activityView":"stacked","playbookExperienceId":"14f99f878736b810040dcbb5cebb35ec","parentSysId":"{{sysId}}","parentTable":"{{table}}","compactMode":"","recordGeneratorQuery":"","isNewParentRecord":""}</action_attributes><action_name>test</action_name><action_payload/><action_type>type</action_type><active>true</active><button_type>primary</button_type><client_action/><client_conditions/><client_conditions_on_fields/><confirmation_message/><confirmation_required>false</confirmation_required><create_access>false</create_access><declarative_action_render_mode/><declarative_action_type>action_component</declarative_action_type><delete_access>false</delete_access><dependency/><description/><design_icon display_value="playbook-fill">playbook_fill</design_icon><enabled>true</enabled><field_name/><field_type>glide_date</field_type><form_fields_required>false</form_fields_required><form_position>contexual_sidebar</form_position><group/><group_by>false</group_by><icon/><label>test</label><model display_value="Form">360935e9534723003eddddeeff7b127d</model><model_conditions/><model_field_required/><order>0</order><payload_map/><read_access>false</read_access><record_conditions/><record_selection_required>false</record_selection_required><required_roles/><requires_value>false</requires_value><script_condition>sn_playbook.PlaybookExperience.parentRecordContainsPlaybook(current)</script_condition><server_script/><specificity>21</specificity><sys_class_name>sys_declarative_action_assignment</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-29 17:48:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>26f2f7cb87f6b810040dcbb5cebb3569</sys_id><sys_mod_count>1</sys_mod_count><sys_name>test</sys_name><sys_overrides/><sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package><sys_policy/><sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope><sys_update_name>sys_declarative_action_assignment_26f2f7cb87f6b810040dcbb5cebb3569</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-29 17:48:57</sys_updated_on><table>x_snc_gestion_in_0_incident_data</table><tooltip/><ui_component display_value="now-playbook-experience">9d0bc73916d784d8692b89e9553124dc</ui_component><view/><workspace/><write_access>false</write_access></sys_declarative_action_assignment><sys_translated_text action="delete_multiple" query="documentkey=26f2f7cb87f6b810040dcbb5cebb3569"/></record_update>]]></payload>
+        <payload_hash>1606259573</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>5e279ce6877a7410040dcbb5cebb353f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 17:48:57</sys_created_on>
+        <sys_id>e133ff4f87f6b810040dcbb5cebb358a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c32ac7eb70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 17:48:57</sys_updated_on>
+        <type>Action Assignment</type>
+        <update_guid>a933ff4f52f6b810c1cb0bdb0ce2a789</update_guid>
+        <update_guid_history>a933ff4f52f6b810c1cb0bdb0ce2a789:1606259573,ef13bf4f79f6b81022d12de720ff5e87:667623076</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-29 18:16:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_declarative_action_assignment">sys_declarative_action_assignment</sys_db_object>
+        <sys_id>2014c92e18664fc8aec2bd4aa98d3ec1</sys_id>
+        <sys_metadata>26f2f7cb87f6b810040dcbb5cebb3569</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_scope_delete display_value="">c458e80bb9fa46a0bf668b8f86355390</sys_scope_delete>
+        <sys_update_name>sys_declarative_action_assignment_26f2f7cb87f6b810040dcbb5cebb3569</sys_update_name>
+        <sys_update_version display_value="sys_declarative_action_assignment_26f2f7cb87f6b810040dcbb5cebb3569">e133ff4f87f6b810040dcbb5cebb358a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-29 18:16:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

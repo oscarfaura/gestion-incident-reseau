@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Compte Rendu Activite" max_length="40" name="x_snc_gestion_in_0_compte_rendu_d_activite" sizeclass="5" type="collection"/>
+</database>

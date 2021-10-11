@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Intervention" max_length="40" name="x_snc_gestion_in_0_intervention" sizeclass="1" type="collection"/>
+</database>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Gestion Incident Reseau Config">a84fa8a2353e7410306b6ccacc4cdf0b</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckeizgguccraaaaaalddhhhggeexmggjjviih",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_uib_base_aw.NOW_UXF_PAGE#ADD_NOTIFICATIONS_RELAY_db35ff9a0b321010a8b1c96237673a97",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_uib_base_aw.NOW_UXF_PAGE#ADD_NOTIFICATIONS_RELAY_db35ff9a0b321010a8b1c96237673a97",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "items" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "items" ]
+            }
+          }
+        }
+      },
+      "sysId" : "49fe7d575f983bb3f8eea3fa8d40694c"
+    },
+    "operation" : null,
+    "targetId" : "ckeizgguccraaaaaakddhhhgghgotoxlbb",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Template">aa2d6c7f8776bc10040dcbb5cebb35ea</macroponent>
+        <macroponent_config>{
+  "sysId" : "@data.gform.nowRecordFormBlob.sysId",
+  "table" : "@data.gform.nowRecordFormBlob.table",
+  "fields" : "@data.gform.nowRecordFormBlob.fields",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : "true"
+}</macroponent_config>
+        <name>Template</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">baecec3f8776bc10040dcbb5cebb359b</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="Template">6e2d6c7f8776bc10040dcbb5cebb35dc</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 11:19:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>362d6c7f8776bc10040dcbb5cebb35ed</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Template</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_screen_362d6c7f8776bc10040dcbb5cebb35ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 12:19:25</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=362d6c7f8776bc10040dcbb5cebb35ed"/>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Teams gestion incident reseaux sur ESM Demo</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</name>
+        <read_roles/>
+        <suffix>teams_gestion_incident_reseaux</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:55:07</sys_created_on>
+        <sys_id>cb1c083387b2bc10040dcbb5cebb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_properties_cb1c083387b2bc10040dcbb5cebb352c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:55:07</sys_updated_on>
+        <type>string</type>
+        <value>https://servicenow.webhook.office.com/webhookb2/b187817f-f398-4185-935f-b2d50ce622d8@8bcff170-9979-491e-8683-d8ced0850bad/IncomingWebhook/a7f731f01fc44d0893b96476c0771e83/4c253e15-0128-4f96-9f13-3ceaad311a62</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=cb1c083387b2bc10040dcbb5cebb352c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</application>
+        <file_path/>
+        <instance_id>7484d99edba36410431011f84896195b</instance_id>
+        <instance_name>tdefscesm1demo</instance_name>
+        <name>sys_properties_cb1c083387b2bc10040dcbb5cebb352c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Teams gestion incident reseaux sur ESM Demo</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</name><read_roles/><suffix>teams_gestion_incident_reseaux</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-01 08:55:07</sys_created_on><sys_id>cb1c083387b2bc10040dcbb5cebb352c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</sys_name><sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package><sys_policy/><sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope><sys_update_name>sys_properties_cb1c083387b2bc10040dcbb5cebb352c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-01 08:55:07</sys_updated_on><type>string</type><value>https://servicenow.webhook.office.com/webhookb2/b187817f-f398-4185-935f-b2d50ce622d8@8bcff170-9979-491e-8683-d8ced0850bad/IncomingWebhook/a7f731f01fc44d0893b96476c0771e83/4c253e15-0128-4f96-9f13-3ceaad311a62</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=cb1c083387b2bc10040dcbb5cebb352c"/></record_update>]]></payload>
+        <payload_hash>-939606843</payload_hash>
+        <record_name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</record_name>
+        <reverted_from/>
+        <source>5e279ce6877a7410040dcbb5cebb353f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:55:07</sys_created_on>
+        <sys_id>993cc83387b2bc10040dcbb5cebb3525</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c3b1079930000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:55:07</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>813cc8331bb2bc10759298ce1182ff25</update_guid>
+        <update_guid_history>813cc8331bb2bc10759298ce1182ff25:-939606843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 08:59:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>02eb52c40179447180d2739804e65f91</sys_id>
+        <sys_metadata>cb1c083387b2bc10040dcbb5cebb352c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gestion_in_0.teams_gestion_incident_reseaux</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_scope_delete display_value="">c458e80bb9fa46a0bf668b8f86355390</sys_scope_delete>
+        <sys_update_name>sys_properties_cb1c083387b2bc10040dcbb5cebb352c</sys_update_name>
+        <sys_update_version display_value="sys_properties_cb1c083387b2bc10040dcbb5cebb352c">993cc83387b2bc10040dcbb5cebb3525</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 08:59:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

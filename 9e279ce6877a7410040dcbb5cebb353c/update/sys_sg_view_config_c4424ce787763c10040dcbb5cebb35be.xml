@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Liste des incidents réseaux Detail Screen View Config</name>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 13:33:09</sys_created_on>
+        <sys_id>c4424ce787763c10040dcbb5cebb35be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Liste des incidents réseaux Detail Screen View Config</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_sg_view_config_c4424ce787763c10040dcbb5cebb35be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 13:33:09</sys_updated_on>
+        <table>x_snc_gestion_in_0_incident_data</table>
+        <template display_value="Applet 01">6bb0be5c41a71010f877183fc9b8be0c</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=c4424ce787763c10040dcbb5cebb35be"/>
+</record_update>

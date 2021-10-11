@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Merge PR">be3fc03b87b2bc10040dcbb5cebb3547</macroponent>
+        <name>Call Data Broker to Merge</name>
+        <required_translations/>
+        <script><![CDATA[function script({api, event}) { 
+api.data.merge_requisitions_1.execute({
+"parentId":api.context.props.mergePrId,
+"merge_req_id": api.state.selected_requisition
+});
+ }]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-01 09:08:21</sys_created_on>
+        <sys_id>433fc03b87b2bc10040dcbb5cebb3561</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Call Data Broker to Merge</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_ux_client_script_433fc03b87b2bc10040dcbb5cebb3561</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-01 09:08:21</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

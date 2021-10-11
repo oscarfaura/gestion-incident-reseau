@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 14:13:50</sys_created_on>
+        <sys_id>bace6862873e7410040dcbb5cebb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gestion_in_0_incident_data.x_snc_gestion_in_0.GIR agent</sys_name>
+        <sys_package display_value="Gestion Incident Reseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Reseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_security_acl display_value="x_snc_gestion_in_0_incident_data">7ace6862873e7410040dcbb5cebb35d0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_bace6862873e7410040dcbb5cebb35d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 14:13:50</sys_updated_on>
+        <sys_user_role display_value="x_snc_gestion_in_0.GIR agent" name="x_snc_gestion_in_0.GIR agent">bace6862873e7410040dcbb5cebb3575</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</application>
+        <file_path/>
+        <instance_id>7484d99edba36410431011f84896195b</instance_id>
+        <instance_name>tdefscesm1demo</instance_name>
+        <name>sys_security_acl_role_bace6862873e7410040dcbb5cebb35d5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-27 14:13:50</sys_created_on><sys_id>bace6862873e7410040dcbb5cebb35d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_gestion_in_0_incident_data.x_snc_gestion_in_0.GIR agent</sys_name><sys_package display_value="Gestion Incident Reseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package><sys_policy/><sys_scope display_value="Gestion Incident Reseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope><sys_security_acl display_value="x_snc_gestion_in_0_incident_data">7ace6862873e7410040dcbb5cebb35d0</sys_security_acl><sys_update_name>sys_security_acl_role_bace6862873e7410040dcbb5cebb35d5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-27 14:13:50</sys_updated_on><sys_user_role display_value="x_snc_gestion_in_0.GIR agent" name="x_snc_gestion_in_0.GIR agent">bace6862873e7410040dcbb5cebb3575</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1198954783</payload_hash>
+        <record_name>x_snc_gestion_in_0_incident_data.x_snc_gestion_in_0.GIR agent</record_name>
+        <reverted_from/>
+        <source>5e279ce6877a7410040dcbb5cebb353f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-27 14:13:50</sys_created_on>
+        <sys_id>76ce6862873e7410040dcbb5cebb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c279ad4910000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-27 14:13:50</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7ece6862d63e741036cba26a395121d9</update_guid>
+        <update_guid_history>7ece6862d63e741036cba26a395121d9:-1198954783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_gestion_in_0_incident_data.x_snc_gestion_in_0.GIR agent">78df18768776f410040dcbb5cebb35d3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-28 07:46:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0d164c2fc2bb48f0bbb6ea42d19537d9</sys_id>
+        <sys_metadata>bace6862873e7410040dcbb5cebb35d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gestion_in_0_incident_data.x_snc_gestion_in_0.GIR agent</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_parent display_value="x_snc_gestion_in_0_incident_data">7ace6862873e7410040dcbb5cebb35d0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_scope_delete display_value="">c458e80bb9fa46a0bf668b8f86355390</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_bace6862873e7410040dcbb5cebb35d5</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_bace6862873e7410040dcbb5cebb35d5">76ce6862873e7410040dcbb5cebb35da</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-28 07:46:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

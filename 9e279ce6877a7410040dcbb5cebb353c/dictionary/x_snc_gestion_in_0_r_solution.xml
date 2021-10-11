@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Résolution" max_length="40" name="x_snc_gestion_in_0_r_solution" sizeclass="7" type="collection">
+        <element choice="1" label="Cause du problème" mandatory="true" max_length="40" name="cause_du_probl_me" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Serveur IP" sequence="10" value="serveur_ip"/>
+                <element inactive_on_update="false" label="Load Balancer" sequence="20" value="load_balancer"/>
+                <element inactive_on_update="false" label="Branchements" sequence="30" value="branchements"/>
+                <element inactive_on_update="false" label="Mauvaise version" sequence="40" value="mauvaise_version"/>
+            </choice>
+        </element>
+        <element label="Date d'application" max_length="40" name="date_d_application" type="glide_date_time"/>
+        <element choice="1" label="Domaine du problème" mandatory="true" max_length="40" name="domaine_du_probl_me" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DATA" sequence="10" value="data"/>
+                <element inactive_on_update="false" label="Hardware" sequence="20" value="hardware"/>
+                <element inactive_on_update="false" label="Software" sequence="30" value="software"/>
+            </choice>
+        </element>
+        <element choice="1" label="Nature de la solution" mandatory="true" max_length="40" name="nature_de_la_solution" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Définitive" sequence="10" value="d_finitive"/>
+                <element inactive_on_update="false" label="Temporaire" sequence="20" value="temporaire"/>
+            </choice>
+        </element>
+        <element choice="1" label="Origine du problème" mandatory="true" max_length="40" name="origine_du_probl_me" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Problème Hardware" sequence="10" value="probl_me_hardware"/>
+                <element inactive_on_update="false" label="Problème Software" sequence="20" value="probl_me_software"/>
+                <element inactive_on_update="false" label="Problème Humain" sequence="30" value="probl_me_humain"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Liste des incidents Data Item">ab0bbf9b87363c10040dcbb5cebb3565</data_item>
+        <interleaved_field/>
+        <name>b70bbf9b87363c10040dcbb5cebb35fa Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-30 13:01:44</sys_created_on>
+        <sys_id>770bff9b87363c10040dcbb5cebb3509</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b70bbf9b87363c10040dcbb5cebb35fa Item Stream</sys_name>
+        <sys_package display_value="Gestion Incident Réseau" source="x_snc_gestion_in_0">9e279ce6877a7410040dcbb5cebb353c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gestion Incident Réseau">9e279ce6877a7410040dcbb5cebb353c</sys_scope>
+        <sys_update_name>sys_sg_item_stream_770bff9b87363c10040dcbb5cebb3509</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-30 13:01:44</sys_updated_on>
+        <table/>
+    </sys_sg_item_stream>
+</record_update>

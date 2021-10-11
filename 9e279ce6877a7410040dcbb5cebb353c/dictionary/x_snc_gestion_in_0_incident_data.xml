@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Incident Data" max_length="40" name="x_snc_gestion_in_0_incident_data" sizeclass="16" type="collection">
+        <element label="Changement lié" max_length="32" name="changement_li" reference="change_request" type="reference"/>
+        <element label="Probleme lié" max_length="32" name="probleme_li" reference="problem" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Classification" mandatory="true" max_length="40" name="u_classification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="RNC" sequence="0" value="rnc"/>
+                <element inactive_on_update="false" label="ABC" sequence="1" value="abc"/>
+                <element inactive_on_update="false" label="DEF" sequence="2" value="def"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type de cloture" max_length="40" name="u_close_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Solution implementée" sequence="0" value="solution_implementee"/>
+                <element inactive_on_update="false" label="Solution repoussée" sequence="1" value="solution_repoussee"/>
+                <element inactive_on_update="false" label="Pas de solution" sequence="2" value="pas de solution"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Informations supplémentaires" max_length="4000" name="u_informations_supplementaires" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Ouvert par" max_length="40" name="u_ouvert_par" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Portal" sequence="10" value="portal"/>
+                <element inactive_on_update="false" label="Email" sequence="20" value="email"/>
+                <element inactive_on_update="false" label="API" sequence="30" value="api"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Sous Classification" mandatory="true" max_length="40" name="u_sous_classification" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Performances" sequence="0" value="performances"/>
+                <element inactive_on_update="false" label="Hardware" sequence="1" value="hardware"/>
+                <element inactive_on_update="false" label="Sotfware" sequence="2" value="sotfware"/>
+            </choice>
+        </element>
+    </element>
+</database>
